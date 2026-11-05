@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scanned_files": 56,
+  "findings": [],
+  "scope": "source/config/docs; binary assets intentionally excluded; heuristic scan plus manual review",
+  "networks_by_state": {
+    "untrained": 20,
+    "pretrained": 20,
+    "label_shuffled": 20,
+    "dvd": 20,
+    "simclr": 5,
+    "rotnet": 5,
+    "dino": 5,
+    "noise": 5,
+    "grating": 5,
+    "statistical": 5,
+    "shaders": 5,
+    "correct_05": 5,
+    "correct_10": 5,
+    "correct_20": 5,
+    "correct_50": 5,
+    "resnet50_untrained": 5,
+    "resnet50_pretrained": 5
+  },
+  "numerical_reproduction_performed": false,
+  "author_identity": "withheld",
+  "license": "undecided"
+}

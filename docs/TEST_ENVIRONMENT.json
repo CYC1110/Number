@@ -1,0 +1,38 @@
+{
+  "description": "Observed lightweight-test runtime; not a historical lock or fresh-install validation",
+  "readme_commands_validated_as_plans": 29,
+  "state_train_analysis_plans": 290,
+  "figure_plans": 13,
+  "heavy_actions_run": false,
+  "versions": {
+    "numpy": "2.1.2",
+    "pandas": "2.3.2",
+    "scipy": "1.16.1",
+    "sklearn": "1.7.1",
+    "matplotlib": "3.10.6",
+    "PIL": "11.0.0",
+    "torch": "2.12.0+cu130",
+    "torchvision": "0.27.0+cu130",
+    "tqdm": "4.67.1"
+  },
+  "configured_networks_by_state": {
+    "untrained": 20,
+    "pretrained": 20,
+    "label_shuffled": 20,
+    "dvd": 20,
+    "simclr": 5,
+    "rotnet": 5,
+    "dino": 5,
+    "noise": 5,
+    "grating": 5,
+    "statistical": 5,
+    "shaders": 5,
+    "correct_05": 5,
+    "correct_10": 5,
+    "correct_20": 5,
+    "correct_50": 5,
+    "resnet50_untrained": 5,
+    "resnet50_pretrained": 5
+  },
+  "unittest_tests_passed": 16
+}

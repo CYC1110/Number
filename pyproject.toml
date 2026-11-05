@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantity-geometry-reference"
+version = "0.1.0"
+description = "Reference implementation for inspecting quantity geometry analysis"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "pandas>=2", "scipy>=1.10", "scikit-learn>=1.3", "matplotlib>=3.7", "Pillow>=10", "torch>=2.2", "torchvision>=0.17", "tqdm>=4.60"]
+
+[project.optional-dependencies]
+shaders = ["moderngl>=5.12", "glcontext>=3"]
+fid = ["clean-fid==0.1.35"]
+
+[project.scripts]
+iclr-repro = "iclr_repro.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,159 @@
+{
+  "primitives": [
+    {
+      "source_relative": "subspace/dimensionality/measurement/geo_feat/geo_feat_core.py",
+      "source_sha256": "cde9cea8bb3811282ffd97089753c4a6186d152843932058199d5fbc339cdde0",
+      "destination": "src/iclr_repro/estimators/basis.py",
+      "preserved_definitions": [
+        "ConditionedBasis",
+        "EPS",
+        "FOLD_NAMES",
+        "HALF_NAMES",
+        "_conditioned_basis_from_cell_centroids",
+        "build_balanced_split_manifest",
+        "build_cell_registry",
+        "compute_centroids",
+        "conditioned_bases",
+        "principal_angles",
+        "stable_seed"
+      ],
+      "sha256": "22eb84c7e253c463cbfeb22fd90cc16c4d13932a754352e1ea84df2393fa2efb"
+    },
+    {
+      "source_relative": "subspace/dimensionality/measurement/Overlap/all_pair_overlap_core.py",
+      "source_sha256": "2f26b706698f4e19c716e46e637c59b5e37d8f76cae19c2f16597669de78938c",
+      "destination": "src/iclr_repro/estimators/bc.py",
+      "preserved_definitions": [
+        "bhattacharyya_all_pairs"
+      ],
+      "sha256": "6b4fd6794cbcd47d30bf29355ab8182b6d5fcec33e929adfbc32e03850352187"
+    },
+    {
+      "source_relative": "number/analysis/selectivity.py",
+      "source_sha256": "92e0e707693cdf520642f478c7a6271c0caee4cace514ba6bf256c095a266daf",
+      "destination": "src/iclr_repro/estimators/selectivity.py",
+      "preserved_definitions": [
+        "SelectivityConfig",
+        "compute_selectivity"
+      ],
+      "sha256": "ddfa0637f0741a04fa94f7be5788932c546a0da6ce5ce013d854f2c46fbda304"
+    },
+    {
+      "source_relative": "check/wb_dataset/generate_wb_stimuli.py",
+      "source_sha256": "bfc08a49c507811f32b5f994709da4ce624adefe75f85cf7328dc23469165d23",
+      "destination": "src/iclr_repro/datasets/dot_core.py",
+      "preserved_definitions": [
+        "StimuliConfig",
+        "_assign_colors",
+        "_circle_mask",
+        "_combo_counts",
+        "_dilate_mask_square",
+        "_draw_dots",
+        "_make_region_path",
+        "_mean_interpoint_distance",
+        "_place_nonoverlapping",
+        "_point_in_region",
+        "_rng",
+        "_valid_combos"
+      ],
+      "sha256": "52b3047ceb9e597b685dc7fbe5af08a98428cb1eac0144081bdb8b23780de196"
+    },
+    {
+      "source_relative": "check/wb_dataset/generate_wb_stimuli_rand_uni.py",
+      "source_sha256": "cc9f09df9751b590da78e9df5e73d212bc4e4cd920870427bf0025a7d18a111c",
+      "destination": "src/iclr_repro/datasets/dot_regimes.py",
+      "preserved_definitions": [
+        "_finalize_generation_stats",
+        "_generate_set1_positions_tracked",
+        "_generate_set2_positions_uniform_area_global",
+        "_generate_set2_positions_uniform_area_split",
+        "_generate_set3_positions_tracked",
+        "_make_set2_positions",
+        "_merge_placement_stats",
+        "_new_generation_stats",
+        "_sample_radii_from_uniform_area_budget",
+        "_target_areas_for_color_split",
+        "_try_set2_layouts"
+      ],
+      "sha256": "1a482892047218019a8012c456795f54ef309ba94161edcd7186569bfd239409"
+    },
+    {
+      "source_relative": "synthetic/portable_simclr/generators.py",
+      "source_sha256": "c66457d67e9e661bdd2e217f4bc6e1e4e1dfc8831e995b7427bc9a1895ea7c43",
+      "destination": "src/iclr_repro/datasets/grating.py",
+      "preserved_definitions": [
+        "grating",
+        "grating_parameters",
+        "sample_seed"
+      ],
+      "sha256": "f4db7a8b56ccc55f662fb3309e8ac98c3e9f9376bdb3eb94f67267ac25078b67"
+    },
+    {
+      "source_relative": "synthetic/portable_noise_simclr/noise_source.py",
+      "source_sha256": "d9724799264508b58957c86500cec2fb9fbfb38c059a43d4de8a58cee7c16562",
+      "destination": "src/iclr_repro/datasets/noise.py",
+      "preserved_definitions": [
+        "NoiseSource"
+      ],
+      "sha256": "4f633adf690bd66eb01f8619e8e615540892259faf6bdac4a316aa66b3fffa48"
+    },
+    {
+      "source_relative": "synthetic/portable_simclr/generators.py",
+      "source_sha256": "c66457d67e9e661bdd2e217f4bc6e1e4e1dfc8831e995b7427bc9a1895ea7c43",
+      "destination": "src/iclr_repro/datasets/shader.py",
+      "preserved_definitions": [
+        "ROOT",
+        "ShaderRenderer",
+        "sample_seed"
+      ],
+      "sha256": "61b42d387dc49918b306f62cbcb5813b9661ac0a01d8b8c69eb368fbeea697d0",
+      "adaptations": [
+        "shader templates resolved from data/assets/shaders inside checkout",
+        "explicit os import"
+      ]
+    },
+    {
+      "source_relative": "number/data/stimuli.py",
+      "source_sha256": "5a691bbd185660969ae5d3ce92944ce275da9163a3865a03dc5b91bc7dbe3295",
+      "destination": "src/iclr_repro/datasets/numerosity_core.py",
+      "preserved_definitions": [
+        "StimuliConfig",
+        "_cache_digest",
+        "_circle_mask",
+        "_ellipse_mask",
+        "_load_cached_stimuli",
+        "_make_region_path",
+        "_mean_interpoint_distance",
+        "_place_nonoverlapping",
+        "_point_in_region",
+        "_rect_mask",
+        "_resolve_cache_path",
+        "_rng",
+        "_triangle_mask",
+        "_write_cache",
+        "generate_stimuli"
+      ],
+      "sha256": "1c9815c5c36e10f6be184bc75e720e870c615b35bf401f64ef501a06991366bd",
+      "adaptations": [
+        "disabled implicit caches",
+        "fail explicitly on incomplete placement",
+        "N=1 set2 exempts undefined pairwise-distance constraint"
+      ],
+      "included_definitions": [
+        "StimuliConfig",
+        "_rng",
+        "_circle_mask",
+        "_rect_mask",
+        "_ellipse_mask",
+        "_triangle_mask",
+        "_make_region_path",
+        "_point_in_region",
+        "_place_nonoverlapping",
+        "_mean_interpoint_distance",
+        "generate_stimuli"
+      ]
+    }
+  ],
+  "author_identity": "withheld",
+  "license_status": "undecided; source and third-party rights need confirmation"
+}

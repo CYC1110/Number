@@ -1,0 +1,16 @@
+{
+  "pages": [
+    {
+      "path": "viewers/compare.html",
+      "states": 33,
+      "sha256": "6caef8846e89734a128707768f562e8a3e84a16606551b0f888a25ab82efdcaf"
+    },
+    {
+      "path": "viewers/epochs.html",
+      "states": 91,
+      "sha256": "073fcab849c2550d736d0ad7dbd67247dfe0d34db1fb276e050d58460bbd2128"
+    }
+  ],
+  "normalization": "equal-N, 406 primary cells, assigned A+B+C; scalar display normalization only",
+  "raw_activations_stored": false
+}

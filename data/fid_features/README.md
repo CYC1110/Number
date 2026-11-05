@@ -1,0 +1,3 @@
+# Frozen FID feature contract
+
+Supply `imagenet.npy`, `noise.npy`, `grating.npy`, `statistical.npy`, and `shaders.npy`, each 50,000 x 2,048 finite features extracted by the same frozen Clean-FID 0.1.35 clean-mode extractor. Feature extraction is an external input preparation step, not implemented or executed here. Each matching `.json` must contain `extractor: "clean-fid-0.1.35-clean"`, `unique_image_count: 50000` and `extractor_weight_sha256`. Record source image selection, hashes and resize settings in the sidecar. All extractor hashes must match. `iclr-repro fid --execute` computes distribution means/covariances and the Frechet distance without downloading weights. Actual example images are additionally required by S6.

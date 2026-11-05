@@ -1,0 +1,3 @@
+# External scientific assets
+
+Supply authorized local assets; none is downloaded. Official Statistical/WMM RGB 128x128 images belong in `wmm_official/`. For Shaders supply `shaders/manifest.json`, `shaders/assets/shader_templates.json` and all program files, with `assembled_path` relative to the manifest directory. The manifest requires a `programs` list with `id`, `kind` (`shadertoy` or the supported compact modes), `assembled_path` and `assembled_sha256`. Templates require `vertex_shader_moderngl`. Source paths are checked to remain inside this project and source hashes are checked by the renderer. Confirm third-party reuse rights separately; source licenses are not assumed.
